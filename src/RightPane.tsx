@@ -31,9 +31,6 @@ export class RightPane extends Component<{ conversation?: ConversationDto, onBac
             <div className="right-pane column">
                 {this.props.conversation &&
                     <>
-                        <div className="conversation-header">
-                            <p>{this.props.conversation?.name}</p>
-                        </div>
                         <div className="conversation-header row">
                             <button type="button" className="only-narrow"
                                 onClick={() => this.props.onBack()}>Back</button>
